@@ -3,6 +3,7 @@
    box-sizing: border-box; 
    margin: 0;
    padding: 0;  
+   /* overflow-x: hidden; */
 }
     /* font noto serif  */
 .noto-serif{
@@ -15,20 +16,47 @@
  
 }
 /* shared styles  */
+/* container  */
 .container{
     max-width: 1140px;
     margin: 0 auto;
+} 
+/* bg color  */
+.bg-color{
+    background-color: #F5F8FF;
 }
-
+/* heading text title  */
+.heading-text-title{
+    font-family:"Noto Serif", serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+}
+/* heading color title  */
+.heading-color{
+    color: #e95a08;
+}
+    /* color dark 3  */
 .dark-3{
     color: #00000080;
+}
+/* button style  */
+.btn-primary{
+    font-family: "Inter", sans-serif;
+    background-color: #e95a08;
+    color: white;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    padding: 25px 50px;
+    border: none;
+    margin-top: 26px;
+    margin-bottom: 10px;
 }
 
 
 /* nav style start  */
-.bg-color{
-    background-color: #F5F8FF;
-}
+
 .nav-parent{
     display: flex;
     justify-content: space-between;
@@ -71,19 +99,70 @@
     font-family: "Noto Serif", serif;
     font-size: 65px;
     font-weight: 700;
+    color: #000000;
     margin: 15px 0;
 }
-#banner-color-title{
-    color: #e95a08;
-}
+
 .banner-description{
      font-family: "Inter", sans-serif;
     font-size: 22px;
 }
 
+/* our flower styles  */
+.our-section-parent{
+    margin-bottom: 50px;
+}
+.our-flower-title-div{
+    text-align: center;
+
+}
+
+.our-flower-description{
+   font-family: "Inter", sans-serif;
+    font-size: 22px;
+    max-width: 880px;
+    margin: 5px auto 30px auto; 
+
+}
+
+.our-flower-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.our-flower-image-div{
+    max-width: 270px;
+}
+.our-flower-image-div img{
+    width: 100%;
+}
+.image-text-parent{
+    text-align: center;
+    
+}
+.our-flower-name{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #111111;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.our-flower-rate{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+}
 
 
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px)
+
+{
+    .container{
+        margin: 0 16px;
+    }
     .nav-items .nav-item:nth-child(1) .nav-link,
     .nav-items .nav-item:nth-child(2) .nav-link,
     .nav-items .nav-item:nth-child(3) .nav-link{
@@ -93,7 +172,42 @@
     flex-direction: column-reverse;
    
 }
-.banner-text{
-     margin: auto 16px;
+.banner-title,
+.heading-text-title{
+    font-size: 24px;
 }
+.banner-description{
+    font-size: 14px;
 }
+
+
+/* our flower style  */
+.our-flower-description,
+.our-flower-name,
+.our-flower-rate{
+    font-size: 16px;
+}
+
+.our-flower-parent{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    
+    
+    
+
+    
+}
+
+.our-flower-name{
+    margin-bottom: 5px;
+}
+.btn-primary{
+    width: 100%;
+   
+    
+    
+}
+
+
+}
+
