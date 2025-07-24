@@ -129,6 +129,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+
 }
 .our-flower-image-div{
     max-width: 270px;
@@ -155,7 +156,55 @@
     color: #111111;
 }
 
+/* our plants styles  */
 
+.flower-plants-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin:150px auto 100px auto;
+   
+}
+.flower-plants-image{
+    max-width: 540px;
+   
+}
+.flower-plants-image img{
+    width: 100%;
+    
+}
+.flower-plants-text-parent{
+    max-width: 540px;
+}
+.flower-plants-text-parent ul{
+    list-style-position: outside;
+}
+.flower-plants-text-parent li{
+    font-family:  "Inter", sans-serif;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.flower-badge{
+     position: relative;
+    width: 286px;
+    height:auto;
+      
+
+}
+
+.flower-badge img{
+    width:100%;
+    height: auto;
+    position: absolute;
+    left: 350px;
+    top: -100px;
+    object-fit: cover;
+    z-index: 2;
+
+    
+}
 
 @media screen and (max-width: 576px)
 
@@ -176,7 +225,8 @@
 .heading-text-title{
     font-size: 24px;
 }
-.banner-description{
+.banner-description,
+.flower-plants-text-parent li{
     font-size: 14px;
 }
 
@@ -192,22 +242,23 @@
     display: grid;
    grid-template-columns: repeat(2, 1fr);
     
-    
-    
-
-    
 }
-
 .our-flower-name{
     margin-bottom: 5px;
 }
 .btn-primary{
-    width: 100%;
-   
-    
-    
+    width: 100%;   
 }
 
+/* flower plants styles  */
+.flower-badge{
+    display: none;
+}
+.flower-plants-parent{
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 16px;
+}
 
 }
 
