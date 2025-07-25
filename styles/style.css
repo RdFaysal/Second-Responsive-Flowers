@@ -40,19 +40,6 @@
 .dark-3{
     color: #00000080;
 }
-/* button style  */
-.btn-primary{
-    font-family: "Inter", sans-serif;
-    background-color: #e95a08;
-    color: white;
-    display: block;
-    width: 100%;
-    font-weight: 600;
-    padding: 25px 50px;
-    border: none;
-    margin-top: 26px;
-    margin-bottom: 10px;
-}
 
 
 /* nav style start  */
@@ -109,6 +96,7 @@
 }
 
 /* our flower styles  */
+
 .our-section-parent{
     margin-bottom: 50px;
 }
@@ -154,6 +142,19 @@
     font-size: 22px;
     font-weight: 700;
     color: #111111;
+}
+.btn-primary{
+    font-family: "Inter", sans-serif;
+    background-color: #e95a08;
+    color: white;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    padding: 25px 50px;
+    border: none;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 /* our plants styles  */
@@ -309,6 +310,91 @@
     color: white;
     border-bottom: 1px solid white;
 }
+/* colorful bunch style  */
+.colorful-bunch-parent{
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    
+}
+.colorful-bunch-div{
+    height: 100%;
+}
+.colorful-bunch-div h3{
+     font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: 70px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.colorful-bunch-input-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.colorful-bunch-input-div input{
+    font-family: "Inter", sans-serif;
+    width: 644px;
+    display: block;
+    padding: 20px 15px ;
+    border: none;
+    color: #00000080;
+    
+    
+}
+.colorful-bunch-div button{
+    font-family: "Inter", sans-serif;
+    background-color: #e95a08;
+    color: white;
+    font-weight: 600;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
+}
+/* footer styles */
+.footer-parent{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+.footer-parent p{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    color: #00000080;
+}
+.footer-parent ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.footer-parent ul li a{
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: #6B7280;
+
+}
+.icon-image-parent{
+    width: 200px;
+   display: flex;
+   justify-content: flex-start;
+   align-items:flex-start ;
+   gap: 20px;
+   cursor: pointer;
+   
+}
+.icon-image-parent img{
+ width: 100px;
+}
+
+    /* responsive mobile device */
 
 @media screen and (max-width: 576px)
 
@@ -344,7 +430,7 @@
 }
 
 .our-flower-parent{
-    display: grid;
+  display: grid;
    grid-template-columns: repeat(2, 1fr);
     
 }
@@ -393,6 +479,24 @@
 }
 .deal-zabo-image h5{
     font-size: 16px;
+}
+
+/* colorful brunch style  */
+.colorful-bunch-div h3{
+    font-size: 20px;
+    
+}
+.colorful-bunch-input-div input{
+    width: 200px;
+}
+/* footer styles  */
+.footer-parent{
+    flex-direction: column;
+    margin: 30px 16px;
+    
+}
+.footer-parent p{
+    margin: 10px auto 30px auto;
 }
 
 }
